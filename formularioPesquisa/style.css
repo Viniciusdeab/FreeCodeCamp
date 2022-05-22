@@ -45,3 +45,9 @@ p{
     font-weight: 200;
     text-shadow: 1px 1px 1px rgb(0, 0, 0 /40%);
 }
+
+form{
+    background: rgba(27,27, 50, 0.8);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
