@@ -47,19 +47,65 @@
                     </label>
                     
                     <label>
-                        <input name="user-recomend" value="maybe" type="radio" class="input-radio" checked>
+                        <input name="user-recomend" value="maybe" type="radio" class="input-radio">
                         Talvez
                     </label>
 
                     <label>
-                        <input name="user-recomend" value="not-sure" type="radio" class="input-radio" checked>
+                        <input name="user-recomend" value="not-sure" type="radio" class="input-radio">
                         Não tenho certeza
                     </label>
                 </div>
-                <div class="form-group"></div>
-                <div class="form-group"></div>
-                <div class="form-group"></div>
-                <div class="form-group"></div>
+                <div class="form-group">
+                    <p>Qual o seu recurso preferido no FreeCodeCamp?</p>
+                    <select name="most" id="most-like" class="form-control" required>
+                        <option disabled selected value>Escolha uma opção</option>
+                        <option value="challenges">Desafios</option>
+                        <option value="projects">Projetos</option>
+                        <option value="community">Comunidade</option>
+                        <option value="openSource">Open Source</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>O que você gostaria que mehlorasse?
+                    <span class="clue">(Marque todas a opções que você quiser)</span>
+                    </p>
+
+                    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Projetos Front-End</label>
+                    <br>
+
+                    <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Projetos Back-End</label>
+                    <br>
+
+                    <label><input name="prefer" value="data visualization" type="checkbox" class="input-checkbox">Visualização de dados</label>
+                    <br>
+
+                    <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Desafios</label>
+                    <br>
+
+                    <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Comunidade de código aberto</label>
+                    <br>
+
+                    <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Salas de ajuda do Glitter</label>
+                    <br>
+
+                    <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Vídeos</label>
+                    <br>
+
+                    <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox">Fórum</label>
+                    <br>
+
+                    <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Cursos adicionais</label>
+                    <br>
+
+                </div>
+                <div class="form-group">
+                    <p>Alguma comentário ou sugestão?</p>
+                    <textarea itemid="comments" class="input-textarea" name="comment" placeholder="Digite seu comentário aqui..." cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="subtmit" id="submit" class="submit-button">Enviar</button>
+                </div>
             </form>
         </div>    
     </body>
